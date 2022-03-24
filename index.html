@@ -71,9 +71,52 @@
             background-color: #2c3e50;
             text-align: justify;
             padding-top: 20px;
+        }   
+        .card:hover {
+            color: rgb(245, 245, 245);
+            transform: scale(1.025);
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 5px 10px;            
+        } 
+        .card:hover .card-text{
+            color: rgb(245, 245, 245) !important;
         }
+        .card:hover .backgroundEffect {
+            bottom: 0;
+            height: 320px;
+            width: 100%;
+            position: absolute;
+            z-index: -1;
+            background: #2c3e50;
+            animation: popBackground 0.3s ease-in
+        }   
+        @keyframes popBackground {
+            0% {
+                height: 20px;
+                border-top-left-radius: 50%;
+                border-top-right-radius: 50%
+            }
+
+            50% {
+                height: 80px;
+                border-top-left-radius: 75%;
+                border-top-right-radius: 75%
+            }
+
+            75% {
+                height: 160px;
+                border-top-left-radius: 85%;
+                border-top-right-radius: 85%
+            }
+
+            100% {
+                height: 320px;
+                border-top-left-radius: 100%;
+                border-top-right-radius: 100%
+            }
+        }
+        
     </style>
-    <link href="navbar.css" rel="stylesheet">    
+       
 </head>
 
 <body>
@@ -126,6 +169,7 @@
             <div class="row">
                 <div class="col-md-6">
                     <div class="card mb-6 box-shadow">
+                        <div class="backgroundEffect"></div>
                         <img class="card-img-top"
                             data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
                             alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;"
@@ -139,7 +183,7 @@
                             </ul>
                             <div class="d-flex justify-content-between align-items-center">
                                 <div class="btn-group">
-                                    <a href="https://github.com/joellpaim/CNC-Master"><button type="button" class="btn btn-sm btn-outline-success">Ver
+                                    <a href="https://github.com/joellpaim/CNC-Master" target="_blank"><button type="button" class="btn btn-sm btn-outline-success">Ver
                                             projeto no Github</button></a>
                                     </div>
                             </div>
@@ -148,6 +192,7 @@
                 </div>
                 <div class="col-md-6">
                     <div class="card mb-6 box-shadow">
+                        <div class="backgroundEffect"></div>
                         <img class="card-img-top"
                             data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
                             alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;"
@@ -161,7 +206,7 @@
                             </ul>
                             <div class="d-flex justify-content-between align-items-center">
                                 <div class="btn-group">
-                                    <a href=""><button type="button" class="btn btn-sm btn-outline-success">Ver
+                                    <a href="#" target="_blank"><button type="button" class="btn btn-sm btn-outline-success">Ver
                                         projeto no Github</button></a>
                                     </div>
                             </div>
@@ -170,6 +215,7 @@
                 </div>
                 <div class="col-md-6">
                     <div class="card mb-6 box-shadow">
+                        <div class="backgroundEffect"></div>
                         <img class="card-img-top"
                             data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
                             alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;"
@@ -183,7 +229,7 @@
                             </ul>
                             <div class="d-flex justify-content-between align-items-center">
                                 <div class="btn-group">
-                                    <a href=""><button type="button" class="btn btn-sm btn-outline-success">Ver
+                                    <a href="#" target="_blank"><button type="button" class="btn btn-sm btn-outline-success">Ver
                                         projeto no Github</button></a>
                                 </div>
                             </div>
@@ -192,6 +238,7 @@
                 </div>
                 <div class="col-md-6">
                     <div class="card mb-6 box-shadow">
+                        <div class="backgroundEffect"></div>
                         <img class="card-img-top"
                             data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
                             alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;"
@@ -205,7 +252,7 @@
                             </ul>
                             <div class="d-flex justify-content-between align-items-center">
                                 <div class="btn-group">
-                                    <a href=""><button type="button" class="btn btn-sm btn-outline-success">Ver
+                                    <a href="#" target="_blank"><button type="button" class="btn btn-sm btn-outline-success">Ver
                                         projeto no Github</button></a>
                                 </div>
                             </div>
@@ -214,6 +261,7 @@
                 </div>
                 <div class="col-md-6">
                     <div class="card mb-6 box-shadow">
+                        <div class="backgroundEffect"></div>
                         <img class="card-img-top"
                             data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
                             alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;"
@@ -227,7 +275,7 @@
                             </ul>
                             <div class="d-flex justify-content-between align-items-center">
                                 <div class="btn-group">
-                                    <a href=""><button type="button" class="btn btn-sm btn-outline-success">Ver
+                                    <a href="#" target="_blank"><button type="button" class="btn btn-sm btn-outline-success">Ver
                                         projeto no Github</button></a>
                                 </div>
                             </div>
@@ -236,6 +284,7 @@
                 </div>
                 <div class="col-md-6">
                     <div class="card mb-6 box-shadow">
+                        <div class="backgroundEffect"></div>
                         <img class="card-img-top"
                             data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
                             alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;"
@@ -249,7 +298,7 @@
                             </ul>
                             <div class="d-flex justify-content-between align-items-center">
                                 <div class="btn-group">
-                                    <a href="https://github.com/joellpaim/CalculadoraCNC"><button type="button" class="btn btn-sm btn-outline-success">Ver
+                                    <a href="https://github.com/joellpaim/CalculadoraCNC" target="_blank"><button type="button" class="btn btn-sm btn-outline-success">Ver
                                         projeto no Github</button></a>
                                 </div>
                             </div>
