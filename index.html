@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -18,6 +18,15 @@
 
     <!--Style personalizado-->
     <style>
+        :root {
+            --pri-color: #12181B;
+            --sec-color: #F7941D;
+            --bg-color: #12181B;
+            --bg-rodape: #000000;
+        }
+        body {
+            background-color: var(--bg-color);
+        }
         .navbar-brand {
             color: #fff !important;
             padding-left: 20px;
@@ -26,7 +35,7 @@
             padding-left: 20px;
         }
         .nav-link:hover {
-            color: #F7941D !important; 
+            color: var(--sec-color) !important; 
         }
         .foto-perfil {
             height: auto;
@@ -37,7 +46,7 @@
             border: 15px solid transparent;
         }
         .foto-perfil:hover{
-            border: 5px solid #F7941D;
+            border: 5px solid var(--sec-color);
             border-radius: 50%;
         }
         .parallax {
@@ -67,10 +76,10 @@
             background-size: cover;
         }
         .corPrimaria {
-            background-color: #212121;
+            background-color: var(--pri-color);
         }
         .corSecundaria {
-            background-color: #eceff1;
+            background-color: var(--bg-color);
         }
         p {
             font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -89,7 +98,7 @@
             padding-bottom: 20px;
             text-transform: uppercase;
             font-weight: 700;
-            color: #F7941D;
+            color: var(--sec-color);
         }
         .textoBranco{
             color: white !important;
@@ -98,6 +107,8 @@
             margin-bottom: 0px;
         }
         .textoFooter{
+            color: var(--pri-color);
+            font-weight: 700;
             margin: 0px;
             padding-top: 15px;
             padding-bottom: 15px;
@@ -109,7 +120,7 @@
             padding: 20px;
         }
         .corRodape{
-            background-color: #2c3e50;
+            background-color: var(--sec-color);
             text-align: justify;
             padding-top: 20px;
         }
@@ -189,8 +200,8 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-md navbar-dark" style="background-color:#212121;padding-right: 10px;">
-        <a class="navbar-brand" href="#" >Portfólio</a>
+    <nav class="navbar navbar-expand-md navbar-dark" style="padding-right: 10px;">
+        <a class="navbar-brand" href="#" >Portfolio</a>
         
         <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -202,10 +213,10 @@
             </ul>
             <ul class="navbar-nav">
                 <li>
-                    <a href="#projetos" class="nav-link" style=color:white>Projetos</a>
+                    <a href="#projetos" class="nav-link" style=color:white>Projects</a>
                 </li>
                 <li>
-                    <a href="#sobre" class="nav-link" style=color:white>Sobre</a>
+                    <a href="#sobre" class="nav-link" style=color:white>About</a>
                 </li>
                 <!--
                 <li>
@@ -213,7 +224,7 @@
                 </li>
                 -->
                 <li>
-                    <a href="#contato" class="nav-link" style=color:white>Contato</a>
+                    <a href="#contato" class="nav-link" style=color:white>Contact</a>
                 </li>
             </ul>
         </div>
@@ -227,7 +238,7 @@
             <h1 class="jumbotron-heading textoBranco">Joel Paim</h1>
             <p class="lead textoBranco">Full Stack Software Developer</p>
             <p>
-                <a href="#contato" class="btn btn-dark my-2">Contato</a>
+                <a href="#contato" class="btn btn-dark my-2">Contact</a>
             </p>
             <a href="https://www.linkedin.com/in/joellisboapaim/" target="_blank"><i class="icones-contato fab fa-linkedin"></i></a>
             <a href="https://github.com/joellpaim" target="_blank"><i class="icones-contato fab fa-github"></i></a>
@@ -236,24 +247,32 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <img data-aos="fade-up" data-aos-duration="1500" class="col mt-1" src="https://img.shields.io/badge/python-%230db7ed.svg?style=for-the-badge&logo=python&logoColor=white" alt="" srcset="">
-                    <img data-aos="fade-up" data-aos-duration="1600" class="col mt-1" src="https://img.shields.io/badge/javascript-%230db7ed.svg?style=for-the-badge&logo=javascript&logoColor=white" alt="" srcset="">
-                    <img data-aos="fade-up" data-aos-duration="1700" class="col mt-1" src="https://img.shields.io/badge/typescript-%230db7ed.svg?style=for-the-badge&logo=typescript&logoColor=white" alt="" srcset="">
-                    <img data-aos="fade-up" data-aos-duration="1800" class="col mt-1" src="https://img.shields.io/badge/angular-%230db7ed.svg?style=for-the-badge&logo=angular&logoColor=white" alt="" srcset="">
-                    <img data-aos="fade-up" data-aos-duration="1900" class="col mt-1" src="https://img.shields.io/badge/adonisjs-%230db7ed.svg?style=for-the-badge&logo=adonisjs&logoColor=white" alt="" srcset="">
-                    <img data-aos="fade-up" data-aos-duration="2000" class="col mt-1" src="https://img.shields.io/badge/html5-%230db7ed.svg?style=for-the-badge&logo=html5&logoColor=white" alt="" srcset="">
-                    <img data-aos="fade-up" data-aos-duration="2100" class="col mt-1" src="https://img.shields.io/badge/css3-%230db7ed.svg?style=for-the-badge&logo=css3&logoColor=white" alt="" srcset="">
-                
+                    <img data-aos="fade-up" data-aos-duration="1500" class="col mt-1" src="https://img.shields.io/badge/python-%230db7ed.svg?style=for-the-badge&logo=python&logoColor=white" alt="Badge">
+                    <img data-aos="fade-up" data-aos-duration="1600" class="col mt-1" src="https://img.shields.io/badge/javascript-%230db7ed.svg?style=for-the-badge&logo=javascript&logoColor=white" alt="Badge">
+                    <img data-aos="fade-up" data-aos-duration="1700" class="col mt-1" src="https://img.shields.io/badge/typescript-%230db7ed.svg?style=for-the-badge&logo=typescript&logoColor=white" alt="Badge">
+                    <img data-aos="fade-up" data-aos-duration="1800" class="col mt-1" src="https://img.shields.io/badge/angular-%230db7ed.svg?style=for-the-badge&logo=angular&logoColor=white" alt="Badge">
+                    <img data-aos="fade-up" data-aos-duration="1900" class="col mt-1" src="https://img.shields.io/badge/adonisjs-%230db7ed.svg?style=for-the-badge&logo=adonisjs&logoColor=white" alt="Badge">
+                    <img data-aos="fade-up" data-aos-duration="2000" class="col mt-1" src="https://img.shields.io/badge/html5-%230db7ed.svg?style=for-the-badge&logo=html5&logoColor=white" alt="Badge">
+                    <img data-aos="fade-up" data-aos-duration="2100" class="col mt-1" src="https://img.shields.io/badge/css3-%230db7ed.svg?style=for-the-badge&logo=css3&logoColor=white" alt="Badge">                
                 </div>
             </div>
             </div>      
     </section>
 
-   
-
-    <div class="album py-5 bg-light" id="projetos">
+    <!--Sobre-->
+    <section data-aos="fade-up" data-aos-duration="1500" class="jumbotrom text-center corPrimaria p-3 vh-100" id="sobre">
         <div class="container">
-            <h2 class="jumbotron-heading text-center titulosVerdes">Projetos</h2>
+            <h2 style="padding-top: 60px;" class="junbotron-heading titulosBrancos">Welcome, I'm Joel Paim.</h2>
+            <p class="lead textoBranco">I'm a software developer based in Caxias do Sul BR, specializing in building exceptional websites and everything in between.</p>
+            <p style="padding-bottom: 100px" class="lead textoBranco">As a Full Stack developer, I have experience in a variety of technologies and programming languages, including AdonisJS, PostgreSQL, Flask, Python, and more. I'm currently developing APIs with AdonisJS and PostgreSQL database. In addition, I have worked with the Flask framework for creating web applications, as well as several solutions in Python, such as Android applications, web scraping and process automation. My projects can be found on my Github profile, where I'm always adding new updates and work in progress.</p>
+        </div>
+    </section>
+
+   
+    <!--Projetos-->
+    <div class="album py-5 corSecundaria" id="projetos">
+        <div class="container">
+            <h2 class="jumbotron-heading text-center titulosVerdes">Projects</h2>
             <div class="container-fluid bg-trasparent my-4 p-3" style="position: relative;">
                 <div class="row row-cols-1 row-cols-xs-2 row-cols-sm-2 row-cols-lg-4 g-3">
 
@@ -267,7 +286,7 @@
                                 data-holder-rendered="true">
                             <div class="card-body">
                                 <h4 class="card-text">Pokedex</h4>
-                                <p class="card-text">Um Pokedex em Angular consumindo de uma API.</p>
+                                <p class="card-text">A Pokedex in Angular consuming from an API.</p>
                                 <ul class="p-3">
                                     <li> <img src="https://img.shields.io/badge/angular-%230db7ed.svg?style=for-the-badge&logo=angular&logoColor=white" alt="Angular badge"></li>
                                     <li class="mt-2"> <img src="https://img.shields.io/badge/typescript-%230db7ed.svg?style=for-the-badge&logo=typescript&logoColor=white" alt="Typescript Badge"></li>    
@@ -277,8 +296,7 @@
             
                                 <div class="d-flex justify-content-between align-items-center">
                                     <div class="btn-group">
-                                        <a href="https://github.com/joellpaim/CNC-Master" target="_blank"><button type="button" class="btn btn-sm btn-outline-success">Ver
-                                                projeto no Github</button></a>
+                                        <a href="https://github.com/joellpaim/Pokedex" target="_blank"><button type="button" class="btn btn-sm btn-outline-success">View project on Github</button></a>
                                         </div>
                                 </div>
                             </div>
@@ -294,8 +312,8 @@
                                 src="https://github.com/joellpaim/angular-to-do-list/raw/master/src/assets/img/Angular-to-do-list.png"
                                 data-holder-rendered="true">
                             <div class="card-body">
-                                <h4 class="card-text">Lista de Tarefas</h4>
-                                <p class="card-text">Uma lista de tarefas em Angular.</p>
+                                <h4 class="card-text">Task List</h4>
+                                <p class="card-text">A to-do list in Angular.</p>
                                 <ul class="p-3">
                                     <li> <img src="https://img.shields.io/badge/angular-%230db7ed.svg?style=for-the-badge&logo=angular&logoColor=white" alt="Angular badge"></li>
                                     <li class="mt-2"> <img src="https://img.shields.io/badge/typescript-%230db7ed.svg?style=for-the-badge&logo=typescript&logoColor=white" alt="Typescript Badge"></li>    
@@ -305,8 +323,7 @@
             
                                 <div class="d-flex justify-content-between align-items-center">
                                     <div class="btn-group">
-                                        <a href="https://github.com/joellpaim/CNC-Master" target="_blank"><button type="button" class="btn btn-sm btn-outline-success">Ver
-                                                projeto no Github</button></a>
+                                        <a href="https://github.com/joellpaim/angular-to-do-list" target="_blank"><button type="button" class="btn btn-sm btn-outline-success">View project on Github</button></a>
                                         </div>
                                 </div>
                             </div>
@@ -323,7 +340,7 @@
                                 data-holder-rendered="true">
                             <div class="card-body">
                                 <h4 class="card-text">CNC Factor</h4>
-                                <p class="card-text">Um aplicativo Android desenvolvido para realizar cálculos de usinagem, conta com mais de 30 telas. Em breve na Playstore.</p>
+                                <p class="card-text">An Android application developed to perform machining calculations, it has more than 30 screens. Coming soon to the Playstore.</p>
                                 <ul class="p-3">
                                     <li> <img src="https://img.shields.io/badge/python-%230db7ed.svg?style=for-the-badge&logo=python&logoColor=white" alt="Python badge"></li>
                                     <li class="mt-2"> <img src="https://img.shields.io/badge/kivy-%230db7ed.svg?style=for-the-badge&logo=kivy&logoColor=white" alt="Kivy Badge"></li>                                
@@ -332,8 +349,7 @@
             
                                 <div class="d-flex justify-content-between align-items-center">
                                     <div class="btn-group">
-                                        <a href="https://github.com/joellpaim/CNC-Master" target="_blank"><button type="button" class="btn btn-sm btn-outline-success">Ver
-                                                projeto no Github</button></a>
+                                        <a href="https://github.com/joellpaim/CNC-Master" target="_blank"><button type="button" class="btn btn-sm btn-outline-success">View project on Github</button></a>
                                         </div>
                                 </div>
                             </div>
@@ -350,15 +366,14 @@
                                 data-holder-rendered="true">
                             <div class="card-body">
                                 <h4 class="card-text">PSCRUD</h4>
-                                <p class="card-text">CRUD Python e SQLite simulando um armário.</p>
+                                <p class="card-text">CRUD Python and SQLite simulating a closet.</p>
                                 <ul class="p-3">
                                     <li> <img src="https://img.shields.io/badge/python-%230db7ed.svg?style=for-the-badge&logo=python&logoColor=white" alt="Python badge"></li>
                                     <li class="mt-2"> <img src="https://img.shields.io/badge/sqlite-%230db7ed.svg?style=for-the-badge&logo=sqlite&logoColor=white" alt="SQLite Badge"></li>                                
                                 </ul>
                                 <div class="d-flex justify-content-between align-items-center">
                                     <div class="btn-group">
-                                        <a href="#" target="_blank"><button type="button" class="btn btn-sm btn-outline-success">Ver
-                                            projeto no Github</button></a>
+                                        <a href="#" target="_blank"><button type="button" class="btn btn-sm btn-outline-success">View project on Github</button></a>
                                         </div>
                                 </div>
                             </div>
@@ -375,15 +390,14 @@
                                 data-holder-rendered="true">
                             <div class="card-body">
                                 <h4 class="card-text">QR Creator</h4>
-                                <p class="card-text">Criador de QR-Code com Python.</p>
+                                <p class="card-text">QR-Code Creator with Python.</p>
                                 <ul class="p-3">
                                     <li> <img src="https://img.shields.io/badge/python-%230db7ed.svg?style=for-the-badge&logo=python&logoColor=white" alt="Python badge"></li>
                                     <li class="mt-2"> <img src="https://img.shields.io/badge/qrcode-%230db7ed.svg?style=for-the-badge&logo=qrcode&logoColor=white" alt="QRCode Badge"></li>                                
                                 </ul>
                                 <div class="d-flex justify-content-between align-items-center">
                                     <div class="btn-group">
-                                        <a href="#" target="_blank"><button type="button" class="btn btn-sm btn-outline-success">Ver
-                                            projeto no Github</button></a>
+                                        <a href="#" target="_blank"><button type="button" class="btn btn-sm btn-outline-success">View project on Github</button></a>
                                     </div>
                                 </div>
                             </div>
@@ -400,15 +414,14 @@
                                 data-holder-rendered="true">
                             <div class="card-body">
                                 <h4 class="card-text">GSK bot</h4>
-                                <p class="card-text">Robô de Webscraping: encontra sites via buscas no Google por palavras chave</p>
+                                <p class="card-text">Webscraping Robot: finds websites via Google keyword searches</p>
                                 <ul class="p-3">
                                     <li> <img src="https://img.shields.io/badge/python-%230db7ed.svg?style=for-the-badge&logo=python&logoColor=white" alt="Python badge"></li>
                                     <li class="mt-2"> <img src="https://img.shields.io/badge/selenium-%230db7ed.svg?style=for-the-badge&logo=selenium&logoColor=white" alt="Selenium Badge"></li>                                
                                 </ul>
                                 <div class="d-flex justify-content-between align-items-center">
                                     <div class="btn-group">
-                                        <a href="#" target="_blank"><button type="button" class="btn btn-sm btn-outline-success">Ver
-                                            projeto no Github</button></a>
+                                        <a href="#" target="_blank"><button type="button" class="btn btn-sm btn-outline-success">View project on Github</button></a>
                                     </div>
                                 </div>
                             </div>
@@ -425,15 +438,14 @@
                                 data-holder-rendered="true">
                             <div class="card-body">
                                 <h4 class="card-text">Matrix Bot</h4>
-                                <p class="card-text">Selecionando dados e salvando em XLSX com Pandas.</p>
+                                <p class="card-text">Selecting data and saving to XLSX with Pandas.</p>
                                 <ul class="p-3">
                                     <li> <img src="https://img.shields.io/badge/python-%230db7ed.svg?style=for-the-badge&logo=python&logoColor=white" alt="Python badge"></li>
                                     <li class="mt-2"> <img src="https://img.shields.io/badge/pandas-%230db7ed.svg?style=for-the-badge&logo=pandas&logoColor=white" alt="Pandas Badge"></li>                                
                                 </ul>
                                 <div class="d-flex justify-content-between align-items-center">
                                     <div class="btn-group">
-                                        <a href="https://github.com/joellpaim/Matrix-Bot" target="_blank"><button type="button" class="btn btn-sm btn-outline-success">Ver
-                                            projeto no Github</button></a>
+                                        <a href="https://github.com/joellpaim/Matrix-Bot" target="_blank"><button type="button" class="btn btn-sm btn-outline-success">View project on Github</button></a>
                                     </div>
                                 </div>
                             </div>
@@ -450,15 +462,14 @@
                                 data-holder-rendered="true">
                             <div class="card-body">
                                 <h4 class="card-text">CNC Calc</h4>
-                                <p class="card-text">Calculadora CNC com PySimpleGUI.</p>
+                                <p class="card-text">CNC Calculator with PySimpleGUI.</p>
                                 <ul class="p-3">
                                     <li> <img src="https://img.shields.io/badge/python-%230db7ed.svg?style=for-the-badge&logo=python&logoColor=white" alt="Python badge"></li>
                                     <li class="mt-2"> <img src="https://img.shields.io/badge/pysimplegui-%230db7ed.svg?style=for-the-badge&logo=pysimplegui&logoColor=white" alt="PySimpleGUI Badge"></li>                                
                                 </ul>
                                 <div class="d-flex justify-content-between align-items-center">
                                     <div class="btn-group">
-                                        <a href="https://github.com/joellpaim/CalculadoraCNC" target="_blank"><button type="button" class="btn btn-sm btn-outline-success">Ver
-                                            projeto no Github</button></a>
+                                        <a href="https://github.com/joellpaim/CalculadoraCNC" target="_blank"><button type="button" class="btn btn-sm btn-outline-success">View project on Github</button></a>
                                     </div>
                                 </div>
                             </div>
@@ -475,7 +486,7 @@
                                 data-holder-rendered="true">
                             <div class="card-body">
                                 <h4 class="card-text">Flask Blog</h4>
-                                <p class="card-text">Um CRUD simples desenvolvido com Flask e SQLite</p>
+                                <p class="card-text">A simple CRUD built with Flask and SQLite</p>
                                 <ul class="p-3">
                                     <li> <img src="https://img.shields.io/badge/python-%230db7ed.svg?style=for-the-badge&logo=python&logoColor=white" alt="Python badge"></li>
                                     <li class="mt-2"> <img src="https://img.shields.io/badge/flask-%230db7ed.svg?style=for-the-badge&logo=flask&logoColor=white" alt="Flask Badge"></li>                                
@@ -483,8 +494,7 @@
                                 </ul>
                                 <div class="d-flex justify-content-between align-items-center">
                                     <div class="btn-group">
-                                        <a href="https://github.com/joellpaim/Flask-blog" target="_blank"><button type="button" class="btn btn-sm btn-outline-success">Ver
-                                            projeto no Github</button></a>
+                                        <a href="https://github.com/joellpaim/Flask-blog" target="_blank"><button type="button" class="btn btn-sm btn-outline-success">View project on Github</button></a>
                                     </div>
                                 </div>
                             </div>
@@ -501,7 +511,7 @@
                                 data-holder-rendered="true">
                             <div class="card-body">
                                 <h4 class="card-text">Flask Auth App</h4>
-                                <p class="card-text">Um app de autenticação simples desenvolvido com Flask e SQLite</p>
+                                <p class="card-text">A simple authentication app powered by Flask and SQLite</p>
                                 <ul class="p-3">
                                     <li> <img src="https://img.shields.io/badge/python-%230db7ed.svg?style=for-the-badge&logo=python&logoColor=white" alt="Python badge"></li>
                                     <li class="mt-2"> <img src="https://img.shields.io/badge/flask-%230db7ed.svg?style=for-the-badge&logo=flask&logoColor=white" alt="Flask Badge"></li>                                
@@ -509,8 +519,7 @@
                                 </ul>
                                 <div class="d-flex justify-content-between align-items-center">
                                     <div class="btn-group">
-                                        <a href="https://github.com/joellpaim/Flask-Auth-App" target="_blank"><button type="button" class="btn btn-sm btn-outline-success">Ver
-                                            projeto no Github</button></a>
+                                        <a href="https://github.com/joellpaim/Flask-Auth-App" target="_blank"><button type="button" class="btn btn-sm btn-outline-success">View project on Github</button></a>
                                     </div>
                                 </div>
                             </div>
@@ -522,13 +531,7 @@
         </div>
     </div>
 
-    <!--Sobre-->
-    <section data-aos="fade-up" data-aos-duration="1500" class="jumbotrom text-center corPrimaria p-3 vh-100" id="sobre">
-        <div class="container">
-            <h2 style="padding-top: 60px;" class="junbotron-heading titulosBrancos">Sobre</h2>
-            <p style="padding-bottom: 100px" class="lead textoBranco">Como desenvolvedor Full Stack, tenho experiência em diversas tecnologias e linguagens de programação, incluindo AdonisJS, PostgreSQL, Flask, Python e muito mais. Atualmente, estou desenvolvendo APIs com AdonisJS e banco de dados PostgreSQL. Além disso, já trabalhei com o framework Flask para criação de aplicativos web, bem como diversas soluções em Python, como aplicativos Android, web scraping e automação de processos. Meus projetos podem ser encontrados em meu perfil no Github, onde estou sempre adicionando novas atualizações e trabalhos em andamento.</p>
-        </div>
-    </section>
+    
 
     <!--Depoimentos
     <section class="jumbotron text-center" style="background-color: white !important" id="depoimentos">
@@ -545,10 +548,12 @@
     -->
 
     <!--Contato-->
-    <section data-aos="fade-up" data-aos-duration="1500" class="corRodape" id="contato">
+    <section data-aos="fade-up" data-aos-duration="1500" class="corPrimaria" id="contato">
         <div>
             <div class="container-fluid">
-                <h4 style="padding: 15px;" class="text-center titulosVerdes">Contato</h4>
+                <h4 style="padding: 15px;" class="text-center titulosVerdes">Contact</h4>
+            
+                
                 <div class="container text-center">
                     <a href="mailto:joellpaim@hotmail.com" target="_blank"><i class="icones-contato fa fa-lg fa-envelope" aria-hidden="true"></i></a>                
                     <a href="https://api.whatsapp.com/send?phone=5554996014163&text=Ol%C3%A1%2C%20vim%20pela%20sua%20p%C3%A1gina%20de%20portf%C3%B3lio" target="_blank"><i class="icones-contato fab fa-whatsapp" aria-hidden="true"></i></a>                
@@ -558,9 +563,11 @@
         </div>
     </section>
 
+   
+
     <!--Footer-->
     <footer class="text-center corRodape textoFooter">
-        <p class="textoBranco">Copyright 2023 - Desenvolvido por Joel Paim</p>
+        <p>Developed by Joel Paim</p>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     
@@ -568,6 +575,8 @@
     <script>
       AOS.init();
     </script>
+
+     
 </body>
 
 </html>
